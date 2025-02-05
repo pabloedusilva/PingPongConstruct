@@ -1,7 +1,7 @@
 # 🏓 Ping Pong Game – Construct 2 🏓  
 
-# TESTE O JOGO AQUI:
-* **https://pabloedusilva.github.io/PingPongConstruct/**
+# TESTE O JOGO AQUI👉: **https://pabloedusilva.github.io/PingPongConstruct/**
+
 
 ## 🎮 Descrição  
 
