@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Sheet_fase1</name>
+    <events>
+        <variable constant="0" name="Pontos_RED" sid="993926924214381" static="0" type="number">0</variable>
+        <variable constant="0" name="Pontos_BLUE" sid="388700402363557" static="0" type="number">0</variable>
+        <variable constant="0" name="Bonus_Reset_Red" sid="416793008280333" static="0" type="number">1</variable>
+        <variable constant="0" name="Bonus_Reset_Blue" sid="220000596200938" static="0" type="number">1</variable>
+        <variable constant="0" name="bonus_RED" sid="591273602444507" static="0" type="number">6</variable>
+        <variable constant="0" name="bonus_BLUE" sid="783878616773975" static="0" type="number">6</variable>
+        <event-group description="" sid="766979155602533" title="START LAYOUT">
+            <sub-events>
+                <event-block sid="507097642949967">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="246923982248054" type="System" />
+                    </conditions>
+                    <actions>
+                        <action behavior="Physics" id="12" name="Set world gravity" sid="191359037271928" type="Ball_White">
+                            <param id="0" name="Gravity">0</param>
+                        </action>
+                        <action behavior="Physics" id="2" name="Apply force at angle" sid="622837794934888" type="Ball_White">
+                            <param id="0" name="Force">700</param>
+                            <param id="1" name="Angle">random(360)</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="570100571801369" type="System">
+                            <param id="0" name="Variable">bonus_BLUE</param>
+                            <param id="1" name="Value">6</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="510060896421937" type="System">
+                            <param id="0" name="Variable">bonus_RED</param>
+                            <param id="1" name="Value">6</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="565902395276816" title="RESET BALL">
+            <sub-events>
+                <event-block sid="503790549165635">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="510764409757597" type="Keyboard">
+                            <param id="0" name="Key">82</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="661865624941148" type="Ball_White" />
+                        <action id="-3" name="Create object" sid="277285328259183" type="System">
+                            <param id="0" name="Object to create">Ball_White</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">846</param>
+                            <param id="3" name="Y">483</param>
+                        </action>
+                        <action behavior="Physics" id="2" name="Apply force at angle" sid="479679306167026" type="Ball_White">
+                            <param id="0" name="Force">700</param>
+                            <param id="1" name="Angle">random(360)</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="541867359399631" title="MOVIMENTAÇÂO">
+            <sub-events>
+                <event-block sid="545577513208219">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="831198070236740" type="Keyboard">
+                            <param id="0" name="Key">87</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="361340711749886" type="raqueteVermelha">
+                            <param id="0" name="Angle">270</param>
+                            <param id="1" name="Distance">14</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="637905249723288">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="133257653035227" type="Keyboard">
+                            <param id="0" name="Key">83</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="997653523603981" type="raqueteVermelha">
+                            <param id="0" name="Angle">-270</param>
+                            <param id="1" name="Distance">14</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="477500273467249">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="830538437245340" type="Keyboard">
+                            <param id="0" name="Key">38</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="410766199510433" type="raqueteAzul">
+                            <param id="0" name="Angle">270</param>
+                            <param id="1" name="Distance">14</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="231994335970206">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="491188381348765" type="Keyboard">
+                            <param id="0" name="Key">40</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-23" name="Move at angle" sid="823526634326844" type="raqueteAzul">
+                            <param id="0" name="Angle">-270</param>
+                            <param id="1" name="Distance">14</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="234377973400417" title="BLUE">
+            <sub-events>
+                <event-block sid="562171577656646">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="320149682895429" type="Ball_White">
+                            <param id="0" name="Object">Wall_RED</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="801699406003379" type="Ball_White" />
+                        <action id="-3" name="Create object" sid="456892004690251" type="System">
+                            <param id="0" name="Object to create">Ball_White</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">846</param>
+                            <param id="3" name="Y">483</param>
+                        </action>
+                        <action behavior="Physics" id="2" name="Apply force at angle" sid="615220538756940" type="Ball_White">
+                            <param id="0" name="Force">700</param>
+                            <param id="1" name="Angle">random(360)</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="483455201390978" type="Pontos_BLUE">
+                            <param id="0" name="Text">int(Pontos_BLUE.Text) + 1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="137267990312888">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="865467064244641" type="System">
+                                    <param id="0" name="Variable">bonus_BLUE</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="453963229264516" type="System">
+                                    <param id="0" name="Variable">bonus_BLUE</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="712698053725214">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="393186055871300" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="553594465985037" type="Bonus_BLUE">
+                            <param id="0" name="Frame number">bonus_BLUE</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="417482024228850" title="RED">
+            <sub-events>
+                <event-block sid="830582274279892">
+                    <conditions>
+                        <condition id="0" name="On collision with another object" sid="233747151709537" type="Ball_White">
+                            <param id="0" name="Object">Wall_BLUE</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="300497414751938" type="Ball_White" />
+                        <action id="-3" name="Create object" sid="240699351353302" type="System">
+                            <param id="0" name="Object to create">Ball_White</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">846</param>
+                            <param id="3" name="Y">483</param>
+                        </action>
+                        <action behavior="Physics" id="2" name="Apply force at angle" sid="647404103369713" type="Ball_White">
+                            <param id="0" name="Force">700</param>
+                            <param id="1" name="Angle">random(360)</param>
+                            <param id="2" name="Image point">0</param>
+                        </action>
+                        <action id="0" name="Set text" sid="282548480142789" type="Pontos_RED">
+                            <param id="0" name="Text">int(Pontos_RED.Text) + 1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="597506438313666">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="373660879650440" type="System">
+                                    <param id="0" name="Variable">bonus_RED</param>
+                                    <param id="1" name="Comparison">4</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Subtract from" sid="238161980068736" type="System">
+                                    <param id="0" name="Variable">bonus_RED</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="795501838604265">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="676769384176768" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="5" name="Set frame" sid="108541283485575" type="Bonus_RED">
+                            <param id="0" name="Frame number">bonus_RED</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="758953180455638" title="BONUS_BLUE">
+            <sub-events>
+                <event-group description="" sid="532826184429900" title="RST_BLUE">
+                    <sub-events>
+                        <event-block sid="451680565359355">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="690228245216366" type="System">
+                                    <param id="0" name="Variable">Bonus_Reset_Blue</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="795469326942105" type="System">
+                                    <param id="0" name="Variable">Bonus_Reset_Blue</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="346973184061133" type="System">
+                                    <param id="0" name="Variable">bonus_BLUE</param>
+                                    <param id="1" name="Value">6</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="979484769749776" type="Bonus_BLUE">
+                                    <param id="0" name="Frame number">bonus_BLUE</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-block sid="808556152414817">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="668727678880520" type="System">
+                            <param id="0" name="Variable">bonus_BLUE</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="281362015174299">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="435965118954940" type="Keyboard">
+                                    <param id="0" name="Key">32</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="475473290502363">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="341064208552140" type="Ball_White">
+                                            <param id="0" name="Object">raqueteAzul</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Physics" id="2" name="Apply force at angle" sid="238232914547433" type="Ball_White">
+                                            <param id="0" name="Force">4000</param>
+                                            <param id="1" name="Angle">random(110, 250)</param>
+                                            <param id="2" name="Image point">Wall_RED.Angle</param>
+                                        </action>
+                                        <action id="-11" name="Subtract from" sid="839873690035732" type="System">
+                                            <param id="0" name="Variable">Bonus_Reset_Blue</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="513231115130866" type="Ball_White">
+                                            <param id="0" name="Animation">&quot;FIREBLUE&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="748731492554387" title="BONUS_RED">
+            <sub-events>
+                <event-group description="" sid="941350490740839" title="RST_RED">
+                    <sub-events>
+                        <event-block sid="983238396119455">
+                            <conditions>
+                                <condition id="-14" name="Compare variable" sid="987758180367574" type="System">
+                                    <param id="0" name="Variable">Bonus_Reset_Red</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="950962273478227" type="System">
+                                    <param id="0" name="Variable">Bonus_Reset_Red</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="259439121875960" type="System">
+                                    <param id="0" name="Variable">bonus_RED</param>
+                                    <param id="1" name="Value">6</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="626647730255874" type="Bonus_RED">
+                                    <param id="0" name="Frame number">bonus_RED</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-group>
+                <event-block sid="593928782650980">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="826997892129664" type="System">
+                            <param id="0" name="Variable">bonus_RED</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">0</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="355534109126744">
+                            <conditions>
+                                <condition id="2" name="Key is down" sid="418225406457559" type="Keyboard">
+                                    <param id="0" name="Key">70</param>
+                                </condition>
+                            </conditions>
+                            <actions />
+                            <sub-events>
+                                <event-block sid="924009849387436">
+                                    <conditions>
+                                        <condition id="0" name="On collision with another object" sid="624890958110002" type="Ball_White">
+                                            <param id="0" name="Object">raqueteVermelha</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action behavior="Physics" id="2" name="Apply force at angle" sid="244977110332969" type="Ball_White">
+                                            <param id="0" name="Force">4000</param>
+                                            <param id="1" name="Angle">random(-110, -250)</param>
+                                            <param id="2" name="Image point">Wall_BLUE.Angle</param>
+                                        </action>
+                                        <action id="-11" name="Subtract from" sid="197803967016431" type="System">
+                                            <param id="0" name="Variable">Bonus_Reset_Red</param>
+                                            <param id="1" name="Value">1</param>
+                                        </action>
+                                        <action id="4" name="Set animation" sid="751317283727061" type="Ball_White">
+                                            <param id="0" name="Animation">&quot;FIRERED&quot;</param>
+                                            <param id="1" name="From">1</param>
+                                        </action>
+                                    </actions>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="446797136492883" title="RESTART LAYOUT">
+            <sub-events>
+                <event-block sid="781231158500641">
+                    <conditions>
+                        <condition id="0" name="Compare text" sid="448136309262213" type="Pontos_BLUE">
+                            <param id="0" name="Text to compare">&quot;15&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="928750643995945" type="System">
+                            <param id="0" name="Layout">WinBlue</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="758842223333065">
+                    <conditions>
+                        <condition id="0" name="Compare text" sid="855220678262231" type="Pontos_RED">
+                            <param id="0" name="Text to compare">&quot;15&quot;</param>
+                            <param id="1" name="Case sensitivity">0</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="604373402547464" type="System">
+                            <param id="0" name="Layout">WinRed</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

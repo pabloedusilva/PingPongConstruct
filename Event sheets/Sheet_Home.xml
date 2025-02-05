@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Sheet_Home</name>
+    <events>
+        <event-group description="" sid="651318191979030" title="Inciar o Game">
+            <sub-events>
+                <event-block sid="727627826699067">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="337395944586889" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="895424419868965" title="PLAY">
+            <sub-events>
+                <event-block sid="541109669568496">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="427972772169797" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">PlayButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="845370263688778" type="System">
+                            <param id="0" name="Layout">fase1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>

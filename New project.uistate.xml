@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout active="1" order="2">fase1</layout>
+        <layout order="4">WinBlue</layout>
+        <layout order="6">WinRed</layout>
+        <layout order="0">Home</layout>
+        <event-sheet order="3">Sheet_fase1</event-sheet>
+        <event-sheet order="5">Sheet_WinBlue</event-sheet>
+        <event-sheet order="7">Sheet_WinRed</event-sheet>
+        <event-sheet order="1">Sheet_Home</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="0" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/raqueteVermelha/" />
+        <folder expanded="1" path="animation-folder/raqueteAzul/" />
+        <folder expanded="1" path="animation-folder/Ball_White/" />
+        <folder expanded="1" path="animation-folder/BackGround/" />
+        <folder expanded="1" path="animation-folder/wall_invisible/" />
+        <folder expanded="1" path="animation-folder/Wall_RED/" />
+        <folder expanded="1" path="animation-folder/Wall_BLUE/" />
+        <folder expanded="1" path="animation-folder/Bonus_BLUE/" />
+        <folder expanded="1" path="animation-folder/Bonus_RED/" />
+        <folder expanded="1" path="animation-folder/BG_RedWin/" />
+        <folder expanded="1" path="animation-folder/BG_BlueWin/" />
+        <folder expanded="1" path="animation-folder/HomeButton/" />
+        <folder expanded="1" path="animation-folder/RestartButton/" />
+        <folder expanded="1" path="animation-folder/BackgroundHome/" />
+        <folder expanded="1" path="animation-folder/PlayButton/" />
+        <folder expanded="1" path="animation-folder/RespawBall/" />
+    </folders-expanded>
+</c2uistate>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Sheet_WinBlue</name>
+    <events>
+        <event-group description="" sid="586523044193127" title="RESTART GAME">
+            <sub-events>
+                <event-block sid="268161112379958">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="489703719726282" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">RestartButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="172452425418627" type="System">
+                            <param id="0" name="Layout">fase1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="580510298668149" title="IR PARA O INICIO">
+            <sub-events>
+                <event-block sid="486451348752135">
+                    <conditions>
+                        <condition id="6" name="On object clicked" sid="377041315603601" type="Mouse">
+                            <param id="0" name="Mouse button">0</param>
+                            <param id="1" name="Click type">0</param>
+                            <param id="2" name="Object clicked">HomeButton</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-2" name="Go to layout" sid="284353064665604" type="System">
+                            <param id="0" name="Layout">WinRed</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
