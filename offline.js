@@ -1,0 +1,32 @@
+﻿{
+	"version": 1738762920,
+	"fileList": [
+		"data.js",
+		"c2runtime.js",
+		"jquery-3.4.1.min.js",
+		"offlineClient.js",
+		"images/raquetevermelha-sheet0.png",
+		"images/raqueteazul-sheet0.png",
+		"images/ball_white-sheet0.png",
+		"images/ball_white-sheet1.png",
+		"images/ball_white-sheet2.png",
+		"images/background-sheet0.png",
+		"images/wall_invisible-sheet0.png",
+		"images/wall_red-sheet0.png",
+		"images/bonus_blue-sheet0.png",
+		"images/bonus_red-sheet0.png",
+		"images/bg_redwin-sheet0.png",
+		"images/bg_bluewin-sheet0.png",
+		"images/homebutton-sheet0.png",
+		"images/restartbutton-sheet0.png",
+		"images/backgroundhome-sheet0.png",
+		"images/playbutton-sheet0.png",
+		"images/respawball-sheet0.png",
+		"icon-16.png",
+		"icon-32.png",
+		"icon-114.png",
+		"icon-128.png",
+		"icon-256.png",
+		"loading-logo.png"
+	]
+}
