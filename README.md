@@ -47,3 +47,7 @@ Quer adicionar melhorias ao jogo? Fique à vontade para editar, modificar e comp
 ---
 
 Aproveite o jogo e desafie seus amigos para uma partida de **Ping Pong Game**! 🏆
+
+<img width="200" alt="image" src= "https://github.com/user-attachments/assets/b01007e0-b428-4996-a14c-82842e5397db" />
+
+
