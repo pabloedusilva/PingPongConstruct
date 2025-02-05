@@ -6,7 +6,7 @@
 
 ## 🎮 Descrição  
 
-**Ping Pong Game** é um jogo interativo criado no **Construct 2**, inspirado no clássico jogo de tênis de mesa. Com uma mecânica simples e divertida, o jogo traz duas raquetes controláveis, uma de cada lado da tela, que devem rebater a bolinha para evitar que ela saia dos limites do jogo. O objetivo é manter a bolinha em movimento o máximo de tempo possível, desafiando a agilidade e reflexos do jogador.  
+**Ping Pong Game** é um jogo interativo criado no **Construct 2**, inspirado no clássico jogo de tênis de mesa. Com uma mecânica simples e divertida, o jogo traz duas raquetes controláveis, uma de cada lado da tela, que devem rebater a bolinha para evitar que ela saia dos limites do jogo. O objetivo é chegar aos **15 pontos**, desafiando a agilidade e reflexos do jogador.  
 
 ## 🚀 Como Jogar  
 
@@ -15,11 +15,13 @@
 
 **2. Controles**  
 - **Raquete Esquerda**: Mova para cima e para baixo com as teclas `W` e `S`.  
-- **Raquete Direita**: Mova para cima e para baixo com as teclas `Seta Para Cima (↑)` e `Seta Para Baixo (↓)`.  
+- **Raquete Direita**: Mova para cima e para baixo com as teclas `Seta Para Cima (↑)` e `Seta Para Baixo (↓)`.
+- **Especial**: Pressione a tecla **F** ou a tecla **Espaço** para usar o especial quando completar a barra de força.
 
 **3. Objetivo**  
 - Rebata a bolinha com sua raquete e evite que ela ultrapasse os limites da tela.  
-- O jogo continua até que um dos jogadores perca a bolinha.  
+- O jogo continua até que um dos jogadores perca a bolinha.
+-  
 
 ## 🛠️ Recursos  
 
@@ -36,7 +38,7 @@
 
 ## 📌 Requisitos  
 
-- **Construct 2:** O jogo foi desenvolvido no Construct 2 e pode ser editado nele.  
+- **Construct 2:** O jogo foi desenvolvido no Construct 2 e pode ser editado nele. **[Baixe o Constrct2 aqui](https://www.construct.net/en/construct-2/download).**
 - **Teclado:** Necessário para controlar as raquetes.  
 - **Windows/Mac:** O jogo pode ser jogado em qualquer sistema compatível com o Construct 2.  
 
