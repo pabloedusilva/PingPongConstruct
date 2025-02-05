@@ -1,5 +1,8 @@
 # 🏓 Ping Pong Game – Construct 2 🏓  
 
+# TESTE O JOGO AQUI:
+* **https://pabloedusilva.github.io/PingPongConstruct/**
+
 ## 🎮 Descrição  
 
 **Ping Pong Game** é um jogo interativo criado no **Construct 2**, inspirado no clássico jogo de tênis de mesa. Com uma mecânica simples e divertida, o jogo traz duas raquetes controláveis, uma de cada lado da tela, que devem rebater a bolinha para evitar que ela saia dos limites do jogo. O objetivo é manter a bolinha em movimento o máximo de tempo possível, desafiando a agilidade e reflexos do jogador.  
