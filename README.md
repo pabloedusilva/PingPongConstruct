@@ -20,15 +20,13 @@
 
 **3. Objetivo**  
 - Rebata a bolinha com sua raquete e evite que ela ultrapasse os limites da tela.  
-- O jogo continua até que um dos jogadores perca a bolinha.
--  
+- O jogo continua até que um dos jogadores perca a bolinha e cheguem aos 15 pontos.
 
 ## 🛠️ Recursos  
 
 ✅ **Mecânica Clássica:** Inspirado no jogo original de Pong, garantindo uma jogabilidade intuitiva.  
 ✅ **Controles Simples:** Apenas teclas de movimento para controle das raquetes.  
 ✅ **Física Realista:** A bolinha quica de forma natural ao tocar nas raquetes e nas bordas da tela.  
-✅ **Desafio Progressivo:** A velocidade da bolinha pode aumentar conforme o jogo avança, tornando o desafio ainda maior.  
 
 ## 🎨 Como Personalizar o Jogo?  
 
